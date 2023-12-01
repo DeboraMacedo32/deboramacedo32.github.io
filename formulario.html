@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+    <link rel="stylesheet" href="/css/formulario.css">
+    <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/index.html" class="botao-voltar">Ir para página Inicial</a>
+        <h1>Cadastre-se</h1>
+      
+        <form id="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone" required>
+            
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+            
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+        <div>
+            <button onclick="excluirTodosItens()">Excluir Todos</button>
+        </div>
+    
+    </div>
+
+    <ul id="listaItens"></ul>
+
+    <div class="campoPesquisa">
+        <label for="campoPesquisa">Pesquisar por nome:</label>
+        <input type="text" id="campoPesquisa" placeholder="Digite o nome">  
+    </div>
+
+</body>
+
+</html>

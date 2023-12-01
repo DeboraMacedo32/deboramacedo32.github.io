@@ -1,0 +1,138 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../assets/img/ods.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 20.4px;
+}
+
+.container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    /* Fundo branco semitransparente para o esfumaçado */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    /* max-height: 100vh; */
+    width: 100%;
+    max-width: 440px;
+    /* margin-left: 80px; */
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #f7efef;
+}
+
+input:not(#campoPesquisa),
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 140px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.botao-voltar {
+    position: absolute;
+    top: -20.4px;
+    /* right: auto; */
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    /* border-radius: 20.4px; */
+    border-radius: 4px;
+}
+
+.botao-voltar:hover {
+    background-color: #0056b3;
+}
+
+#listaItens {
+    background-color: #fff;
+    width: 440px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.campoPesquisa {
+    width: 440px;
+    padding: 10px;
+    height: max-content;
+    background-color: whitesmoke;
+}
+
+.campoPesquisa input {
+    display: block;
+    width: calc(100% - 20px);
+    max-width: 440px;
+    padding: 10px;
+    margin: auto;
+    border: none;
+    outline: none;
+}
+
+.campoPesquisa label {
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.campoPesquisa button {
+    width: 50%;
+}
